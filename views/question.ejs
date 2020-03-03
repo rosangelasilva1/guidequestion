@@ -4,7 +4,7 @@
 
     <div class="container">
 
-    <div class = "card" id="form-ask"> 
+    <div class = "card" id="form-question"> 
 
         <div class="card-header">
             <h5>Ask your question </h5>
@@ -13,9 +13,9 @@
         <div class = "card-body">
             <form method="POST" action="/savequestion"  >
                 <label>Title</label>
-                <input type="text" placeholder="Title" class="form-control">
+                <input type="text" placeholder="Title" class="form-control" name="fieldtitle">
                 <label>Description</label>
-                <textarea placeholder="describe your question here" class="form-control"></textarea>
+                <textarea placeholder="describe your question here" class="form-control" name="fielddescription"></textarea>
                 <br>
                 <button class="btn btn-primary">To ask</button>
 
