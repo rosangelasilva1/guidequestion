@@ -9,14 +9,15 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.get('/',(req,res)=>{
     res.render('index');
-
 });
 
 app.get('/question',(req,res)=>{
-    
-    res.render('question');
-
+   res.render('question');
 });
+
+app.post('/savequestion',(req,res)=>{
+    res.render('savequestion');
+})
 
 app.listen(3000,()=>{
     console.log("app running");
