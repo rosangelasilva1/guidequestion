@@ -4,6 +4,8 @@ const app = express();
 app.set('view engine','ejs');
 
 app.use(express.static('public'))
+var path = require('path');
+app.set('views', path.join(__dirname, 'views'));
 
 app.get('/',(req,res)=>{
     res.render('index');
